@@ -1,0 +1,35 @@
+body{
+    background: url(Assets/background.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.padre{
+    width: auto;
+    height: 710px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.padre .btn{
+    color: white;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    font-size: 1.2cm;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 5px;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.393);
+}
+
+.padre .btn span{
+    display: block;
+    font-size: 15Px;
+    color: yellow;
+}
