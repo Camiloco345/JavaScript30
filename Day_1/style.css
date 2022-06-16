@@ -26,7 +26,14 @@ body{
     width: 65px;
     height: 65px;
     background-color: rgba(0, 0, 0, 0.393);
+    transition: all 0.07s ease;
 }
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
 
 .padre .btn span{
     display: block;
