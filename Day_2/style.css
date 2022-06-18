@@ -44,4 +44,30 @@ html {
     position: absolute;
     top: 50%;
     border-radius: 5px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+  }
+
+
+  .second{
+    background-color: red;
+    height: 4px;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.19, 3.01, 0.58, 1);
+  }
+
+  .minute{
+    background-color: black;
+    height: 4px;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.19, 3.01, 0.58, 1);
+  }
+
+  .hour{
+    background-color: white;
+    height: 4px;
+    transform: rotate(90deg);
+    transition: all 0.5s;
   }

@@ -15,5 +15,30 @@
             <div class="hand second"></div>
         </div>
     </div>
+
+    <script>
+
+        const secondsValue = document.querySelector('.second');
+        const minutesValue = document.querySelector('.minute');
+        const hoursValue = document.querySelector('.hour');
+
+        const setTime = () => {
+
+            const now =  new Date();
+        
+            const hour = now.getHours();
+            const hourDeg = ((hour / 12 ) * 360) + 90; hoursValue.style.transform = `rotate(${hourDeg}deg)`; 
+            const minutes = now.getMinutes();
+            const minDeg = ((minutes / 60 ) * 360) + 90; minutesValue.style.transform = `rotate(${minDeg}deg)`;
+            const seconds = now.getSeconds();
+            const secDeg = ((seconds / 60 ) * 360) + 90; secondsValue.style.transform = `rotate(${secDeg}deg)`;
+                                      
+        }
+
+
+        setInterval(setTime, 1000)
+
+    </script>
+
 </body>
 </html>
